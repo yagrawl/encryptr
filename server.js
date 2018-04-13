@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
-    res.send('This is working, bitch.');
+    res.render('index', {data:''});
 });
 
 app.listen(PORT, () => {
