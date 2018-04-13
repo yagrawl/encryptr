@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
     res.render('index', {data:''});
 });
 
+app.get('/decryptr', (req, res) => {
+    res.render('decrypt', {data: ''});
+});
+
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`);
 });
@@ -25,4 +29,10 @@ app.post('/encrypted', (req, res) => {
     var data = req.body;
     console.log(data);
     res.render('encryption', {data:data});
+});
+
+app.post('/decrypted', (req, res) => {
+    var data = req.body;
+    console.log(data);
+    res.render('decryption', {data:data});
 });
