@@ -1,7 +1,7 @@
 <html>
     <head>
 
-        <title>encryptr.</title>
+        <title>encryptr. | encryption</title>
 
         <!-- SEO and mobile format declarations -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +25,8 @@
                 <center><p class="logo-text">
                     encryptr.<span style="color:#ADADAD; font-size:36px">|</span><span style="color:#ADADAD;">decryptr.</span>
                 </p></center>
-                <form action="/encrypted" method="post">
-                    <textarea name="toencrypt" placeholder="Enter text to encrypt." name="text"></textarea>
-                    <input class="text-bar input-text" type="text" placeholder="Enter Encryption Key" name="key"></input>
-                    </br>
-                    <center><input type="submit" class="encrypt-button" value="encrypt"></input></center>
-                </form>
+                <p><%= data.toencrypt %></p>
+                <p><%= data.key %></p>
 
             </div>
 

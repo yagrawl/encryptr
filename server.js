@@ -20,3 +20,9 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`);
 });
+
+app.post('/encrypted', (req, res) => {
+    var data = req.body;
+    console.log(data);
+    res.render('encryption', {data:data});
+});
