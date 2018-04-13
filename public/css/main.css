@@ -1,0 +1,103 @@
+@font-face {
+    font-family: Andale Mono;
+    src: url(fonts/AndaleMono.ttf);
+    font-weight: 100;
+}
+
+a, a:hover {
+    text-decoration: none !important;
+}
+
+.no-overflow {
+    overflow-x: hidden !important;
+}
+
+.main-area {
+    max-width: 80%;
+    width: 100%;
+    margin: 6vh auto;
+}
+
+@media screen and (max-width: 540px) {
+    .main-area {
+        margin: 5vh auto;
+        width: 100%;
+    }
+}
+
+.logo-text {
+    font-family: Andale Mono;
+    font-size: 24px;
+    font-weight: 100;
+    color: #292929;
+}
+
+textarea {
+    font-family: Andale Mono;
+    font-size: 16px;
+    font-weight: 100;
+    color: #ADADAD;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 30px;
+    padding: 20px 20px 20px 20px;
+    width: 70%;
+    height: 250px;
+    border-radius: 10px;
+    border-color: #F1F1F1;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea::placeholder, input::placeholder {
+    opacity: 0.5;
+}
+
+input.text-bar {
+  margin: 0 auto;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 15%;
+  width: 30%;
+  height: 45px;
+  padding: 0 20px;
+  border: 1px solid #E7E5DF;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-text {
+    font-family: Andale Mono;
+    font-size: 16px;
+    font-weight: 200;
+    color: #ADADAD;
+}
+
+.encrypt-button {
+    border: 1px solid #292929;
+    margin-top: 30px;
+    width: 150px;
+    height: 35px;
+    background-color: #292929;
+    font-family: Andale Mono;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    textarea {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+    }
+
+    input.text-bar {
+        margin-left: 5%;
+        width: 90%;
+    }
+}

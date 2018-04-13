@@ -21,7 +21,19 @@
     </head>
     <body>
         <div class="no-overflow">
-            <p>SETUP COMPLETE</p>
+            <div class="main-area">
+                <center><p class="logo-text">
+                    encryptr.<span style="color:#ADADAD; font-size:36px">|</span><span style="color:#ADADAD;">decryptr.</span>
+                </p></center>
+                <form action="/encrypting" method="post">
+                    <textarea name="toencrypt" placeholder="Enter text to encrypt." name="text"></textarea>
+                    <input class="text-bar input-text" type="text" placeholder="Enter Encryption Key" name="key"></input>
+                    </br>
+                    <center><input type="submit" class="encrypt-button" value="encrypt"></input></center>
+                </form>
+
+            </div>
+
             <!--jQuery -->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
