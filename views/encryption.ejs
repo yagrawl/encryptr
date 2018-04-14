@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href="../css/main.css" rel="stylesheet">
 
+        <script src="../js/clipboard.min.js"></script>
 
         <!-- Comment -->
     </head>
@@ -28,7 +29,22 @@
                 </p></center>
                 <div class="result-box">
                     <p id="encryptedtext"><%= encrypted %></p>
+                    <button class="btn copy" data-clipboard-action="copy" data-clipboard-target="#encryptedtext">
+                        <img src="../img/clippy.png" width="20px" alt="Copy to clipboard">
+                    </button>
                 </div>
+
+                <script>
+                    var clipboard = new ClipboardJS('.btn');
+
+                    clipboard.on('success', function(e) {
+                        console.log(e);
+                    });
+
+                    clipboard.on('error', function(e) {
+                        console.log(e);
+                    });
+                </script>
 
             </div>
 

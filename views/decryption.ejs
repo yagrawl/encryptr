@@ -18,6 +18,7 @@
         <link href="../css/main.css" rel="stylesheet">
 
         <script src="../js/script.js"></script>
+        <script src="../js/clipboard.min.js"></script>
 
         <!-- Comment -->
     </head>
@@ -29,7 +30,22 @@
                 </p></center>
                 <div class="result-box">
                     <p id="decryptedtext"><%= decrypted %></p>
+                    <button class="btn copy" data-clipboard-action="copy" data-clipboard-target="#encryptedtext">
+                        <img src="../img/clippy.png" width="20px" alt="Copy to clipboard">
+                    </button>
                 </div>
+
+                <script>
+                    var clipboard = new ClipboardJS('.btn');
+
+                    clipboard.on('success', function(e) {
+                        console.log(e);
+                    });
+
+                    clipboard.on('error', function(e) {
+                        console.log(e);
+                    });
+                </script>
 
             </div>
 
