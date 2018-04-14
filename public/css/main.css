@@ -103,7 +103,7 @@ input.text-bar {
     background-color: #F5F5F5;
 }
 
-.result-box > p {
+.result-box > p, .text-wrapper > span {
     font-family: Andale Mono;
     font-size: 16px;
     font-weight: 100;
