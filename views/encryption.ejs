@@ -20,14 +20,14 @@
 
         <!-- Comment -->
     </head>
-    <body onload="encrypt('<%= data.toencrypt %>', '<%= data.key %>');">
+    <body>
         <div class="no-overflow">
             <div class="main-area">
                 <center><p class="logo-text">
                     encryptr.<span style="color:#F1F1F1">|</span><a href="decryptr"><span style="color:#ADADAD;">decryptr.</a></span>
                 </p></center>
                 <div class="result-box">
-                    <p id="encryptedtext"></p>
+                    <p id="encryptedtext"><%= encrypted %></p>
                 </div>
 
             </div>
