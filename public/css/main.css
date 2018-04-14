@@ -114,7 +114,33 @@ input.text-bar {
 .copy {
     position: absolute;
     right: 10px;
-    top: 10px;
+    bottom: 10px;
+}
+
+.feedback {
+    position: absolute;
+    width: 120px;
+    top: 50px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    visibility: hidden;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    height: 48px;
+    line-height: 16px;
+    border-radius: 8px;
+    background: #292929;
+    opacity: 0.8;
+}
+
+.feedback > p {
+    font-family: Andale Mono;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
 }
 
 @media screen and (max-width: 900px) {

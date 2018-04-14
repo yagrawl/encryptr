@@ -29,15 +29,21 @@
                 </p></center>
                 <div class="result-box">
                     <p id="encryptedtext"><%= encrypted %></p>
-                    <button class="btn copy" data-clipboard-action="copy" data-clipboard-target="#encryptedtext">
+                    <div class="feedback" id="feedback">
+                        <p>Copied</p>
+                    </div>
+                    <button id="btncpy" class="btn copy" data-clipboard-action="copy" data-clipboard-target="#encryptedtext">
                         <img src="../img/clippy.png" width="20px" alt="Copy to clipboard">
                     </button>
                 </div>
 
                 <script>
                     var clipboard = new ClipboardJS('.btn');
-
                     clipboard.on('success', function(e) {
+                        console.log(document.getElementById('feedback'));
+                        setTimeout(function(){
+                            document.getElementById("feedback").style.visibility = 'hidden'; }, 3000);
+                        document.getElementById("feedback").style.visibility = 'visible';
                         console.log(e);
                     });
 
