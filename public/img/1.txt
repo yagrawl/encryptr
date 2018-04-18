@@ -1,0 +1,18 @@
+1.a. Describe a polynomial-time reduction from 2SAT to 3SAT, and prove that your reduction is correct.
+
+Suppose we are given a boolean formula A in 2CNF form. Let B be the boolean formula B obtained from A when using the following transformation:
+
+For each clause, given a term (a | b), replace the clause with the two following clauses: (a | b | c) & (a | b | ~c), where c is a new variable.
+
+I claim that A is satisfiable iff B is satisfiable.
+
+Because the reduction transform the 2CNF formula into an equivalent 3CNF formula, the output formula is satisfiable if and only if the input circuit is satisfiable.  (??? not sure if this is adequate)
+
+We can easily transform A into B in polynomial time by brute force.
+
+1.b.
+????
+
+1.c.
+To prove that 3SAT is has a polynomial-time algorithm, we would need to reduce 3SAT into 2SAT using a polynomial-time transformation algorithm.  In contrast, what we did was reduce 2SAT to 3SAT, and then found a polynomial-time algorithm for 2SAT.
+
